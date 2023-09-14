@@ -1,2 +1,2 @@
 # Tree (Linked tree)
-![](./img/result.PNG)
+<img src="./result.PNG" />
