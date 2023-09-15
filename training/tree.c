@@ -58,6 +58,7 @@ void preorder(treenode* root) {
     }
 }
 
+//중위 순회
 void inorder(treenode* root) {
     if (root == NULL)
         return;
@@ -65,12 +66,12 @@ void inorder(treenode* root) {
     {
         while (root != NULL)
         {
-            push(root);
-            root = root->left;
+            push(root); //현재 노드를 스택에 추가
+            root = root->left; //왼쪽 노드로 변경
         }
-        root = pop();
-        printf("%d ", root->data);
-        root = root->right;
+        root = pop(); //스택에 넣은 현재 노드로 변경
+        printf("%d ", root->data); //노드 데이터 출력
+        root = root->right; //노드를 오른쪽 노드로 변경
     }
 }
 
